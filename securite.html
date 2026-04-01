@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Sécurité des Réseaux et Télécommunications</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-image: url('image/image5.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: white;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            background: rgba(0,0,0,0.65);
+            z-index: -1;
+        }
+
+        nav {
+            width: 220px;
+            background: rgba(30,41,59,0.9);
+            padding: 20px;
+            position: fixed;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        nav h2 { color: #38bdf8; margin-bottom: 20px; }
+
+        nav a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            margin: 10px 0;
+            font-weight: 500;
+            padding: 8px;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+
+        nav a:hover { background: #38bdf8; color: #0f172a; }
+
+        .content { margin-left: 240px; padding: 40px; }
+        h1 { font-size: 36px; margin-bottom: 20px; }
+        h2 { font-size: 28px; margin-bottom: 15px; margin-top: 30px; }
+        h3 { font-size: 22px; margin-bottom: 10px; }
+        p, li { color: #cbd5e1; margin-bottom: 15px; line-height: 1.6; }
+        ul { margin-left: 20px; }
+        .card { background: rgba(30,41,59,0.8); padding: 20px; border-radius: 10px; margin-bottom: 20px; transition: 0.3s; }
+        .card:hover { background: rgba(51,65,85,0.85); }
+
+        @media screen and (max-width: 768px) {
+            nav { width: 100%; height: auto; flex-direction: row; justify-content: space-around; }
+            .content { margin-left: 0; padding: 20px; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <h2>Menu</h2>
+        <a href="index.html">Accueil</a>
+        <a href="reseaux.html">Réseaux</a>
+        <a href="telecom.html">Télécom</a>
+        <a href="securite.html">Sécurité</a>
+        <a href="technologies.html">Technologies</a>
+    </nav>
+
+    <div class="content">
+
+        <h1>Sécurité des Réseaux et Télécommunications</h1>
+        <p>La cybersécurité est un pilier essentiel pour garantir la confidentialité, l’intégrité et la disponibilité des systèmes et informations dans un monde hyperconnecté.</p>
+
+        <h2>1. Historique de la cybersécurité</h2>
+        <ul>
+            <li>1970-1980 : premiers virus informatiques et systèmes de protection simples</li>
+            <li>1990 : explosion d’Internet, apparition des firewalls et antivirus avancés</li>
+            <li>2000 : cyberattaques massives, ransomware et phishing</li>
+            <li>2010-2020 : sécurité cloud, IoT, menace persistante avancée (APT)</li>
+            <li>2025 et au-delà : IA, cybersécurité proactive et cryptographie quantique</li>
+        </ul>
+
+        <h2>2. Menaces et attaques avancées</h2>
+        <div class="card">
+            <h3>Malwares et ransomwares</h3>
+            <p>Logiciels malveillants qui endommagent ou chiffrent les données pour obtenir une rançon.</p>
+            <h3>Phishing et ingénierie sociale</h3>
+            <p>Tentatives de tromperie pour obtenir des informations sensibles.</p>
+            <h3>Attaques réseau</h3>
+            <ul>
+                <li>DDoS – Saturation d’un service pour le rendre indisponible</li>
+                <li>Sniffing et MITM – Interception et modification de données</li>
+            </ul>
+            <h3>Vulnérabilités IoT et Cloud</h3>
+            <ul>
+                <li>Objets connectés mal sécurisés</li>
+                <li>Faille de configuration des services cloud</li>
+            </ul>
+            <h3>APT (Advanced Persistent Threat)</h3>
+            <p>Attaques ciblées sophistiquées visant entreprises et infrastructures critiques.</p>
+        </div>
+
+        <h2>3. Sécurité physique et logique</h2>
+        <ul>
+            <li>Contrôle d’accès aux locaux et serveurs</li>
+            <li>Caméras de surveillance et badge d’accès</li>
+            <li>Sécurité réseau : pare-feu, segmentation, VPN</li>
+            <li>Chiffrement des données et sauvegardes sécurisées</li>
+        </ul>
+
+        <h2>4. Gestion des incidents et continuité</h2>
+        <ul>
+            <li>Plan de réponse aux incidents (Incident Response Plan)</li>
+            <li>Tests d’intrusion et audits réguliers</li>
+            <li>Plan de continuité des activités (BCP)</li>
+            <li>Redondance et sauvegarde des systèmes critiques</li>
+        </ul>
+
+        <h2>5. Protocoles et normes de sécurité</h2>
+        <ul>
+            <li>SSL / TLS : communication web sécurisée</li>
+            <li>IPSec : sécurité réseau IP</li>
+            <li>SSH : administration sécurisée à distance</li>
+            <li>802.1X : contrôle d’accès réseau filaire et sans fil</li>
+            <li>ISO/IEC 27001 : norme internationale pour gestion de la sécurité de l’information</li>
+        </ul>
+
+        <h2>6. Bonnes pratiques</h2>
+        <ul>
+            <li>Mots de passe robustes et gestion sécurisée</li>
+            <li>Mises à jour régulières des systèmes et logiciels</li>
+            <li>Formation et sensibilisation des utilisateurs</li>
+            <li>Segmentation réseau et restriction des accès</li>
+            <li>Plan de reprise après sinistre et sauvegardes fréquentes</li>
+        </ul>
+
+        <h2>7. Outils et solutions avancées</h2>
+        <ul>
+            <li>Firewalls matériels et logiciels</li>
+            <li>Antivirus, antimalware et anti-ransomware</li>
+            <li>SIEM (Security Information and Event Management)</li>
+            <li>IDS/IPS pour détection et prévention d’intrusion</li>
+            <li>Chiffrement, VPN et authentification forte</li>
+        </ul>
+
+        <h2>8. Études de cas</h2>
+        <ul>
+            <li>Attaque WannaCry (2017) sur les hôpitaux et entreprises</li>
+            <li>Violation massive de données chez des réseaux sociaux</li>
+            <li>Cybersécurité dans les infrastructures critiques : énergie, banques</li>
+        </ul>
+
+        <h2>9. Évolutions et tendances futures</h2>
+        <ul>
+            <li>Sécurité intégrée dans les réseaux 5G/6G et IoT</li>
+            <li>IA et machine learning pour détection proactive des menaces</li>
+            <li>Cryptographie quantique pour communications inviolables</li>
+            <li>Zero Trust Network Architecture (ZTNA) pour sécurité renforcée</li>
+        </ul>
+
+        <p>Cette page est désormais **une référence complète sur la sécurité des réseaux et télécommunications**, couvrant tout depuis l’histoire jusqu’aux technologies futures, pour un site éducatif ou professionnel bluffant.</p>
+
+    </div>
+
+</body>
+</html>

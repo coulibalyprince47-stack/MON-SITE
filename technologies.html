@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Technologies Modernes</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-image: url('image/image2.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: white;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            background: rgba(0,0,0,0.55);
+            z-index: -1;
+        }
+
+        nav {
+            width: 220px;
+            background: rgba(30,41,59,0.9);
+            padding: 20px;
+            position: fixed;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        nav h2 { color: #38bdf8; margin-bottom: 20px; }
+
+        nav a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            margin: 10px 0;
+            font-weight: 500;
+            padding: 8px;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+
+        nav a:hover { background: #38bdf8; color: #0f172a; }
+
+        .content { margin-left: 240px; padding: 40px; }
+        h1 { font-size: 36px; margin-bottom: 20px; }
+        h2 { font-size: 28px; margin-bottom: 15px; margin-top: 30px; }
+        h3 { font-size: 22px; margin-bottom: 10px; }
+        p, li { color: #cbd5e1; margin-bottom: 15px; line-height: 1.6; }
+        ul { margin-left: 20px; }
+        .card { background: rgba(30,41,59,0.8); padding: 20px; border-radius: 10px; margin-bottom: 20px; transition: 0.3s; }
+        .card:hover { background: rgba(51,65,85,0.85); }
+
+        @media screen and (max-width: 768px) {
+            nav { width: 100%; height: auto; flex-direction: row; justify-content: space-around; }
+            .content { margin-left: 0; padding: 20px; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <h2>Menu</h2>
+        <a href="index.html">Accueil</a>
+        <a href="reseaux.html">Réseaux</a>
+        <a href="telecom.html">Télécom</a>
+        <a href="securite.html">Sécurité</a>
+        <a href="technologies.html">Technologies</a>
+    </nav>
+
+    <div class="content">
+
+        <h1>Technologies Modernes</h1>
+        <p>Cette page présente un panorama complet des technologies actuelles et émergentes, couvrant l’informatique, les télécoms, l’IoT, l’IA, le cloud et les innovations futures.</p>
+
+        <h2>1. Réseaux et télécommunications</h2>
+        <ul>
+            <li>Réseaux filaires et sans fil : fibre optique, 5G, Wi-Fi 6/7</li>
+            <li>Protocoles : IP, TCP/UDP, HTTP/HTTPS, VoIP</li>
+            <li>Internet des objets (IoT) et smart devices</li>
+            <li>Edge computing pour traitement local et faible latence</li>
+        </ul>
+
+        <h2>2. Cloud Computing</h2>
+        <div class="card">
+            <h3>Types de cloud</h3>
+            <ul>
+                <li>Cloud public : AWS, Azure, Google Cloud</li>
+                <li>Cloud privé : infrastructures internes sécurisées</li>
+                <li>Cloud hybride : combinaison public + privé</li>
+            </ul>
+            <h3>Avantages</h3>
+            <ul>
+                <li>Scalabilité et flexibilité</li>
+                <li>Réduction des coûts d’infrastructure</li>
+                <li>Accès global et collaboratif</li>
+            </ul>
+        </div>
+
+        <h2>3. Intelligence Artificielle et Machine Learning</h2>
+        <ul>
+            <li>Analyse prédictive et automatisation</li>
+            <li>IA dans la cybersécurité pour détection proactive</li>
+            <li>Reconnaissance vocale, visuelle et traitement du langage naturel</li>
+            <li>Applications industrielles et smart cities</li>
+        </ul>
+
+        <h2>4. Blockchain et technologies distribuées</h2>
+        <ul>
+            <li>Transactions sécurisées et immuables</li>
+            <li>Applications : crypto-monnaies, supply chain, identité numérique</li>
+            <li>Smart contracts pour automatisation de processus</li>
+        </ul>
+
+        <h2>5. IoT et objets connectés</h2>
+        <ul>
+            <li>Smart homes et villes intelligentes</li>
+            <li>Capteurs industriels et agricoles</li>
+            <li>Communication via 5G, LPWAN, ZigBee</li>
+            <li>Surveillance et analyse en temps réel</li>
+        </ul>
+
+        <h2>6. Sécurité et protection</h2>
+        <ul>
+            <li>Chiffrement et authentification forte</li>
+            <li>Gestion des identités et accès (IAM)</li>
+            <li>Sécurité IoT et Edge computing</li>
+            <li>Zero Trust Network Architecture (ZTNA)</li>
+        </ul>
+
+        <h2>7. Innovations récentes</h2>
+        <ul>
+            <li>Réalité augmentée et virtuelle (AR/VR)</li>
+            <li>Robotics et automatisation intelligente</li>
+            <li>Quantum computing et cryptographie quantique</li>
+            <li>Smart grids et mobilité intelligente</li>
+        </ul>
+
+        <h2>8. Tendances futures</h2>
+        <ul>
+            <li>6G et communication holographique</li>
+            <li>AI générative et assistants intelligents</li>
+            <li>Intégration globale IoT + IA + edge computing</li>
+            <li>Smart cities totalement interconnectées et durables</li>
+        </ul>
+
+        <h2>9. Études de cas</h2>
+        <ul>
+            <li>Smart city : Singapour, gestion intelligente de la mobilité et énergie</li>
+            <li>Industrie 4.0 : automatisation des usines avec IoT et IA</li>
+            <li>Cloud et cybersécurité : banques et services financiers internationaux</li>
+        </ul>
+
+        <p>Cette page permet de comprendre l’ensemble des technologies modernes et leur intégration, donnant un aperçu complet pour étudiants, professionnels et passionnés.</p>
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Réseaux Informatiques</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* ===== FOND SPECIFIQUE ===== */
+        body {
+            background-image: url('image/image1.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: white;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        /* Overlay sombre pour lisibilité */
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            background: rgba(0,0,0,0.5);
+            z-index: -1;
+        }
+
+        /* ===== MENU FIXE ===== */
+        nav {
+            width: 220px;
+            background: rgba(30,41,59,0.9);
+            padding: 20px;
+            position: fixed;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        nav h2 {
+            color: #38bdf8;
+            margin-bottom: 20px;
+        }
+
+        nav a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            margin: 10px 0;
+            font-weight: 500;
+            padding: 8px;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            background: #38bdf8;
+            color: #0f172a;
+        }
+
+        /* ===== CONTENU ===== */
+        .content {
+            margin-left: 240px;
+            padding: 40px;
+        }
+
+        h1 { font-size: 36px; margin-bottom: 20px; }
+        h2 { font-size: 28px; margin-bottom: 15px; margin-top: 30px; }
+        p, li { color: #cbd5e1; margin-bottom: 15px; line-height: 1.6; }
+
+        ul { margin-left: 20px; }
+
+        /* Cards pour sections optionnelles */
+        .card {
+            background: rgba(30,41,59,0.8);
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            transition: 0.3s;
+        }
+        .card:hover { background: rgba(51,65,85,0.85); }
+
+        /* Responsive */
+        @media screen and (max-width: 768px) {
+            nav { width: 100%; height: auto; flex-direction: row; justify-content: space-around; }
+            .content { margin-left: 0; padding: 20px; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- MENU FIXE -->
+    <nav>
+        <h2>Menu</h2>
+        <a href="index.html">Accueil</a>
+        <a href="reseaux.html">Réseaux</a>
+        <a href="telecom.html">Télécom</a>
+        <a href="securite.html">Sécurité</a>
+        <a href="technologies.html">Technologies</a>
+    </nav>
+
+    <!-- CONTENU PRINCIPAL -->
+    <div class="content">
+
+        <h1>Réseaux Informatiques</h1>
+        <p>Les réseaux informatiques sont au cœur de la communication moderne. Ils permettent le transfert d’informations entre ordinateurs, serveurs et périphériques, facilitant la collaboration et le partage de données.</p>
+
+        <h2>1. Types de Réseaux</h2>
+        <div class="card">
+            <h3>LAN (Local Area Network)</h3>
+            <p>Un réseau local, limité à un bâtiment ou un campus, offrant des vitesses élevées et un contrôle centralisé.</p>
+            <h3>WAN (Wide Area Network)</h3>
+            <p>Réseau étendu, reliant plusieurs sites géographiques via Internet ou des lignes privées.</p>
+            <h3>MAN (Metropolitan Area Network)</h3>
+            <p>Réseau couvrant une ville ou une agglomération, intermédiaire entre LAN et WAN.</p>
+        </div>
+
+        <h2>2. Topologies de Réseau</h2>
+        <ul>
+            <li><strong>Bus :</strong> Tous les appareils connectés à un câble principal.</li>
+            <li><strong>Anneau :</strong> Les appareils sont connectés en boucle.</li>
+            <li><strong>Étoile :</strong> Chaque appareil est relié à un switch central.</li>
+            <li><strong>Maillage :</strong> Chaque appareil peut se connecter à plusieurs autres.</li>
+        </ul>
+
+        <h2>3. Modèles de Communication</h2>
+        <div class="card">
+            <h3>Modèle OSI</h3>
+            <p>Divisé en 7 couches : physique, liaison, réseau, transport, session, présentation et application. Chaque couche a une fonction précise dans la communication réseau.</p>
+            <h3>Modèle TCP/IP</h3>
+            <p>Composé de 4 couches : lien, internet, transport et application. C’est le modèle utilisé sur Internet.</p>
+        </div>
+
+        <h2>4. Équipements Réseau</h2>
+        <ul>
+            <li><strong>Switch :</strong> Connecte plusieurs appareils au sein d’un LAN.</li>
+            <li><strong>Routeur :</strong> Relie différents réseaux et dirige le trafic.</li>
+            <li><strong>Modem :</strong> Convertit les signaux numériques et analogiques.</li>
+            <li><strong>Point d’accès :</strong> Permet la connexion sans fil (Wi-Fi).</li>
+        </ul>
+
+        <h2>5. Protocoles Importants</h2>
+        <ul>
+            <li>IP (Internet Protocol) – Adresse et routage</li>
+            <li>TCP (Transmission Control Protocol) – Communication fiable</li>
+            <li>UDP (User Datagram Protocol) – Communication rapide mais non fiable</li>
+            <li>HTTP/HTTPS – Navigation web</li>
+            <li>FTP – Transfert de fichiers</li>
+        </ul>
+
+        <h2>6. Applications et Exemples</h2>
+        <ul>
+            <li>Intranet d’entreprise</li>
+            <li>Messagerie et e-mail</li>
+            <li>Cloud computing et services à distance</li>
+            <li>Jeux en ligne et vidéoconférences</li>
+        </ul>
+
+        <p>Cette page offre une base solide pour comprendre les réseaux informatiques et se préparer à explorer les télécommunications et la sécurité dans les autres sections du site.</p>
+
+    </div>
+
+</body>
+</html>
